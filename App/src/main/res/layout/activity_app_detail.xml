@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              tools:context=".modules.main.MainActivity">
+
+
+    <com.ishow.common.widget.TopBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImage="@drawable/ic_back_white"
+        app:text="@string/app_detail"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:background="@color/color_primary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="1dp"/>
+
+
+        <TextView
+            android:id="@+id/app_package_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_grade_2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/J_title"/>
+
+        <TextView
+            android:id="@+id/app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_grade_1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/J_title"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.ishow.common.widget.edittext.EditTextPro
+            android:id="@+id/sign"
+            style="@style/EditTextPro.Item.AppDetail"
+            app:leftText="@string/link_sign"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/AppButton.Submit"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="@string/print"/>
+</LinearLayout>

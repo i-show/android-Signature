@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              tools:context=".modules.main.MainActivity">
+
+
+    <com.ishow.common.widget.TopBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImage="@drawable/ic_exit"
+        app:rightImage="@drawable/ic_settings"
+        app:text="@string/app_name"/>
+
+    <com.ishow.common.widget.edittext.EditTextPro
+        android:id="@+id/sign_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_line_normal_bg"
+        android:minHeight="@dimen/dp_60"
+        android:paddingEnd="@dimen/gap_grade_1"
+        android:paddingStart="@dimen/gap_grade_2"
+        app:bottomLineVisibility="gone"
+        app:editable="false"
+        app:leftImage="@drawable/ic_package"
+        app:leftText="@string/package_name"
+        app:leftTextSize="@dimen/H_title"
+        app:rightImage="@drawable/ic_add"
+        app:rightImageVisibility="visible"/>
+
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/AppButton.Submit"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_80"
+        android:text="@string/yes"/>
+</LinearLayout>

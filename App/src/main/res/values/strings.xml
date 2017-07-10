@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">Signature</string>
+    <string name="app_name_dev">Signature(DEV)</string>
+    <string name="app_name_sit">Signature(SIT)</string>
+    <string name="app_name_uat">Signature(UAT)</string>
+    <string name="app_name_prod">Signature</string>
+
+    <string name="click_again_to_exit">再次点击退出程序</string>
+
+    <string name="settings">设置</string>
+    <string name="settings_link_now_version">当前版本:</string>
+    <string name="package_name">包名：</string>
+    <string name="please_selecte_app">请选择应用</string>
+    <string name="app_detail">App详情</string>
+    <string name="no_app">没有当前App信息</string>
+    <string name="print">打印Log</string>
+    <string name="link_sign">签名：</string>
+    <string name="copy">复制</string>
+    <string name="copy_success">复制成功</string>
+    <string name="sing_copy_success">签名已经复制到剪切板</string>
+
+
+</resources>
